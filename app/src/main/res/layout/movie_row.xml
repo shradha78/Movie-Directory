@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="6dp"
+        android:elevation="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintVertical_bias="0.007">
+        <RelativeLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/movie_icon"
+            android:background="#18CEBD"
+            android:layout_width="130dp"
+            android:layout_height="130dp"/>
+
+        <TextView
+            android:id="@+id/movieTitleID"
+
+            android:text="TITLE "
+        android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/movie_icon"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/ReleaseHeading"
+                android:layout_toRightOf="@+id/movie_icon"
+                android:layout_below="@+id/movieTitleID"
+                android:text="Year Release: "
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/movieReleaseId"
+            android:text="Release"
+            android:layout_toRightOf="@+id/ReleaseHeading"
+            android:layout_alignTop="@+id/ReleaseHeading"
+            android:paddingTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/categoryHeading"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:textSize="14dp"
+                android:text="Category: "
+                android:layout_toRightOf="@id/movie_icon"
+                android:layout_below="@+id/ReleaseHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/movieCategoryId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/categoryHeading"
+                android:layout_alignTop="@+id/categoryHeading"
+                android:layout_alignBottom="@+id/categoryHeading"
+                android:text="Category"
+                android:paddingTop="5dp"/>
+
+        </RelativeLayout>
+        
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
